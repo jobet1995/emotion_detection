@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "emotion-detection"
+version = "0.1.0"
+description = "Professional starter framework for emotion detection workflows in NLP and deep learning."
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.11"
+license = { text = "LICENSE" }
+authors = [
+  { name = "Emotion Detection Team" },
+  { name = "Jobet Casquejo", email = "jobetcasquejo221@gmail.com" }
+]
+keywords = [
+  "emotion-detection",
+  "nlp",
+  "machine-learning",
+  "deep-learning",
+  "pytorch",
+  "transformers"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Text Processing :: Linguistic"
+]
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+exclude = ["tests*", "notebooks*"]
