@@ -19,7 +19,7 @@ This repository is designed to support the full lifecycle of an emotion AI proje
 - [Reproducibility & Environment Hygiene](#reproducibility--environment-hygiene)
 - [Suggested Production Roadmap](#suggested-production-roadmap)
 - [Troubleshooting](#troubleshooting)
-- [License](#license)
+- [LICENSES](#licenses)
 
 ---
 
@@ -242,6 +242,6 @@ flask --app app run --host=0.0.0.0 --port=5000 --debug
 
 ---
 
-## License
+## LICENSES
 
-Add your license here (e.g., MIT, Apache-2.0, or internal proprietary license) and include usage restrictions if needed.
+This project includes a dedicated `LICENSES` document for project-level and third-party licensing guidance.
